@@ -1,0 +1,299 @@
+2020-11-16 14:36:41,924 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 5726 (/home/ubuntu/Desktop/team2-bookapp/recommendation-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/recommendation-service)
+2020-11-16 14:36:41,938 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-16 14:36:42,616 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 14:36:42,617 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-16 14:36:42,658 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-16 14:36:42,694 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 69ms. Found 1 JPA repository interfaces.
+2020-11-16 14:36:42,739 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 14:36:42,741 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-16 14:36:42,750 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-16 14:36:42,754 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 11ms. Found 1 MongoDB repository interfaces.
+2020-11-16 14:36:43,174 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-16 14:36:43,177 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-16 14:36:43,285 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-16 14:36:43,445 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-16 14:36:43,487 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-16 14:36:43,551 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-16 14:36:43,590 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-16 14:36:43,682 [cluster-ClusterId{value='5fb28e7bf2c1ee28890cad4b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2020-11-16 14:36:43,694 [cluster-ClusterId{value='5fb28e7bf2c1ee28890cad4b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8611740}
+2020-11-16 14:36:43,707 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-16 14:36:43,813 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-16 14:36:44,096 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-16 14:36:44,119 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-16 14:36:44,271 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-16 14:36:44,735 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-16 14:36:44,822 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-16 14:36:44,831 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 14:36:44,968 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-16 14:36:44,985 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Started RecommendMainClass in 3.429 seconds (JVM running for 4.266)
+2020-11-16 14:37:56,758 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-16 14:37:56,759 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-16 14:37:56,772 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 13 ms
+2020-11-16 14:37:56,926 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 14:37:57,064 [http-nio-8080-exec-1] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+2020-11-16 14:37:57,275 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 14:38:24,221 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 14:38:24,254 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 14:38:24,292 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the save recommendation block
+2020-11-16 14:38:24,397 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation by ID
+2020-11-16 14:38:24,401 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - The recommendation has been saved.
+2020-11-16 14:38:55,276 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 14:38:55,321 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 14:40:30,471 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 14:40:30,491 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 14:54:31,678 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 14:54:31,723 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 14:55:34,262 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 14:55:34,323 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 15:07:57,491 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 15:07:57,517 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 15:13:57,217 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 15:13:57,286 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 15:29:44,330 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 15:29:44,353 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:07:29,965 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:07:30,050 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:10:42,099 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:10:42,113 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:11:24,423 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:11:24,463 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:12:09,713 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:12:09,786 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:14:28,693 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:14:28,717 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:15:17,732 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:15:17,753 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:15:44,791 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:15:44,805 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:22:53,360 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:22:53,378 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:23:21,522 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 16:23:21,533 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 16:56:08,574 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection -  - Closed connection [connectionId{localValue:2, serverValue:15}] to localhost:27017 because the pool has been closed.
+2020-11-16 16:56:08,629 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 16:56:08,639 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 16:56:08,640 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-16 16:56:08,683 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-16 17:26:20,889 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 4145 (/home/ubuntu/Desktop/team2-bookapp/recommendation-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/recommendation-service)
+2020-11-16 17:26:20,899 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-16 17:26:21,522 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 17:26:21,522 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-16 17:26:21,558 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-16 17:26:21,594 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 64ms. Found 1 JPA repository interfaces.
+2020-11-16 17:26:21,632 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 17:26:21,632 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-16 17:26:21,640 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-16 17:26:21,647 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 14ms. Found 1 MongoDB repository interfaces.
+2020-11-16 17:26:22,114 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-16 17:26:22,115 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-16 17:26:22,193 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-16 17:26:22,347 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-16 17:26:22,398 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-16 17:26:22,452 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-16 17:26:22,542 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-16 17:26:22,627 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-16 17:26:22,639 [cluster-ClusterId{value='5fb2b63eafba765d8d5c77a6', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2020-11-16 17:26:22,653 [cluster-ClusterId{value='5fb2b63eafba765d8d5c77a6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7194332}
+2020-11-16 17:26:22,792 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-16 17:26:23,009 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-16 17:26:23,028 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-16 17:26:23,245 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-16 17:26:23,686 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-16 17:26:23,698 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 17:26:23,724 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-16 17:26:23,868 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-16 17:26:23,879 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Started RecommendMainClass in 3.371 seconds (JVM running for 4.159)
+2020-11-16 17:28:46,453 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-16 17:28:46,457 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-16 17:28:46,467 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 9 ms
+2020-11-16 17:28:46,524 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 17:28:46,601 [http-nio-8080-exec-1] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2020-11-16 17:28:46,771 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 17:29:30,585 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 17:29:30,604 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 17:48:45,985 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 17:48:46,053 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 17:49:12,126 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 17:49:12,187 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 17:53:52,798 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 17:53:52,844 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 18:01:54,625 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 18:01:54,718 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 18:02:01,025 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 18:02:01,074 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 18:17:50,272 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 18:17:50,300 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 18:18:47,202 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 18:18:47,223 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 18:25:43,069 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 18:25:43,104 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 18:28:50,881 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 18:28:50,898 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 18:30:45,887 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-16 18:30:45,907 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-16 19:23:08,197 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection -  - Closed connection [connectionId{localValue:2, serverValue:6}] to localhost:27017 because the pool has been closed.
+2020-11-16 19:23:08,204 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 19:23:08,236 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 19:23:08,237 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-16 19:23:08,291 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-16 20:37:10,826 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-16 20:37:11,476 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 20:37:11,477 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-16 20:37:11,525 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-16 20:37:11,563 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 78ms. Found 1 JPA repository interfaces.
+2020-11-16 20:37:11,587 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 20:37:11,588 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-16 20:37:11,594 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-16 20:37:11,598 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 9ms. Found 1 MongoDB repository interfaces.
+2020-11-16 20:37:11,925 [main] INFO  org.springframework.cloud.context.scope.GenericScope -  - BeanFactory id=72f85714-1753-3d2c-aee4-0a6e4324fcae
+2020-11-16 20:37:12,267 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-16 20:37:12,268 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-16 20:37:12,421 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-16 20:37:12,563 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-16 20:37:12,607 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-16 20:37:12,671 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-16 20:37:12,833 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-16 20:37:12,877 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-16 20:37:12,905 [cluster-ClusterId{value='5fb2e2f81c3154287bebc875', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2020-11-16 20:37:12,911 [cluster-ClusterId{value='5fb2e2f81c3154287bebc875', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4452776}
+2020-11-16 20:37:13,015 [main] WARN  org.springframework.data.convert.CustomConversions -  - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-16 20:37:13,016 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-16 20:37:13,214 [main] WARN  org.springframework.data.convert.CustomConversions -  - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-16 20:37:13,258 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-16 20:37:13,278 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-16 20:37:13,512 [main] WARN  com.netflix.config.sources.URLConfigurationSource -  - No URLs will be polled as dynamic configuration sources.
+2020-11-16 20:37:13,513 [main] INFO  com.netflix.config.sources.URLConfigurationSource -  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-16 20:37:13,518 [main] WARN  com.netflix.config.sources.URLConfigurationSource -  - No URLs will be polled as dynamic configuration sources.
+2020-11-16 20:37:13,518 [main] INFO  com.netflix.config.sources.URLConfigurationSource -  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-16 20:37:13,619 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-16 20:37:14,170 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-16 20:37:14,181 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 20:37:14,200 [main] INFO  org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration -  - Eureka HTTP Client uses Jersey
+2020-11-16 20:37:14,259 [main] WARN  org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -  - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-16 20:37:14,375 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory -  - Setting initial instance status as: STARTING
+2020-11-16 20:37:14,405 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Initializing Eureka in region us-east-1
+2020-11-16 20:37:14,584 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using JSON encoding codec LegacyJacksonJson
+2020-11-16 20:37:14,584 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using JSON decoding codec LegacyJacksonJson
+2020-11-16 20:37:14,816 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using XML encoding codec XStreamXml
+2020-11-16 20:37:14,823 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using XML decoding codec XStreamXml
+2020-11-16 20:37:15,040 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-16 20:37:15,059 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Disable delta property : false
+2020-11-16 20:37:15,059 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Single vip registry refresh property : null
+2020-11-16 20:37:15,059 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Force full registry fetch : false
+2020-11-16 20:37:15,059 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Application is null : false
+2020-11-16 20:37:15,060 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Registered Applications size is zero : true
+2020-11-16 20:37:15,060 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Application version is -1: true
+2020-11-16 20:37:15,060 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Getting all instance registry info from the eureka server
+2020-11-16 20:37:15,211 [main] INFO  com.netflix.discovery.DiscoveryClient -  - The response status is 200
+2020-11-16 20:37:15,215 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Starting heartbeat executor: renew interval is: 30
+2020-11-16 20:37:15,218 [main] INFO  com.netflix.discovery.InstanceInfoReplicator -  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-16 20:37:15,221 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Discovery Client initialized at timestamp 1605559035221 with initial instances count: 1
+2020-11-16 20:37:15,225 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -  - Registering application RECOMMENDATION-SERVICE with eureka with status UP
+2020-11-16 20:37:15,225 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Saw local status change event StatusChangeEvent [timestamp=1605559035225, current=UP, previous=STARTING]
+2020-11-16 20:37:15,232 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080: registering service...
+2020-11-16 20:37:15,283 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration -  - Updating port to 8080
+2020-11-16 20:37:15,288 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-16 20:37:15,300 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - registration status: 204
+2020-11-16 20:37:15,487 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-16 20:37:15,499 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Started RecommendMainClass in 5.7 seconds (JVM running for 6.799)
+2020-11-16 20:42:13,374 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -  - Unregistering application RECOMMENDATION-SERVICE with eureka with status DOWN
+2020-11-16 20:42:13,375 [RMI TCP Connection(6)-127.0.0.1] ERROR com.netflix.discovery.DiscoveryClient -  - Saw local status change event StatusChangeEvent [timestamp=1605559333375, current=DOWN, previous=UP]
+2020-11-16 20:42:13,375 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080: registering service...
+2020-11-16 20:42:13,387 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - registration status: 204
+2020-11-16 20:42:13,387 [RMI TCP Connection(6)-127.0.0.1] INFO  org.apache.catalina.core.StandardService -  - Stopping service [Tomcat]
+2020-11-16 20:42:13,453 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 20:42:13,459 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 20:42:13,460 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-16 20:42:13,482 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-16 20:42:13,482 [RMI TCP Connection(6)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - Shutting down DiscoveryClient ...
+2020-11-16 20:42:15,062 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-16 20:42:16,484 [DiscoveryClient-0] WARN  com.netflix.discovery.TimedSupervisorTask -  - task supervisor shutting down, can't accept the task
+2020-11-16 20:42:16,484 [RMI TCP Connection(6)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - Unregistering ...
+2020-11-16 20:42:16,493 [RMI TCP Connection(6)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - deregister  status: 200
+2020-11-16 20:42:16,514 [RMI TCP Connection(6)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - Completed shut down of DiscoveryClient
+2020-11-16 20:43:05,765 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-16 20:43:06,458 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 20:43:06,459 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-16 20:43:06,496 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-16 20:43:06,534 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 66ms. Found 1 JPA repository interfaces.
+2020-11-16 20:43:06,557 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-16 20:43:06,557 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-16 20:43:06,564 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-16 20:43:06,568 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 10ms. Found 1 MongoDB repository interfaces.
+2020-11-16 20:43:06,821 [main] INFO  org.springframework.cloud.context.scope.GenericScope -  - BeanFactory id=72f85714-1753-3d2c-aee4-0a6e4324fcae
+2020-11-16 20:43:07,156 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-16 20:43:07,157 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-16 20:43:07,314 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-16 20:43:07,466 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-16 20:43:07,544 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-16 20:43:07,694 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-16 20:43:07,752 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-16 20:43:07,859 [cluster-ClusterId{value='5fb2e45be35b2b2ea07c7524', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2020-11-16 20:43:07,878 [cluster-ClusterId{value='5fb2e45be35b2b2ea07c7524', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6088934}
+2020-11-16 20:43:07,922 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-16 20:43:07,933 [main] WARN  org.springframework.data.convert.CustomConversions -  - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-16 20:43:08,037 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-16 20:43:08,110 [main] WARN  org.springframework.data.convert.CustomConversions -  - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-16 20:43:08,293 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-16 20:43:08,314 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-16 20:43:08,367 [main] WARN  com.netflix.config.sources.URLConfigurationSource -  - No URLs will be polled as dynamic configuration sources.
+2020-11-16 20:43:08,370 [main] INFO  com.netflix.config.sources.URLConfigurationSource -  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-16 20:43:08,385 [main] WARN  com.netflix.config.sources.URLConfigurationSource -  - No URLs will be polled as dynamic configuration sources.
+2020-11-16 20:43:08,385 [main] INFO  com.netflix.config.sources.URLConfigurationSource -  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-16 20:43:08,523 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-16 20:43:09,056 [main] INFO  org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration -  - Eureka HTTP Client uses Jersey
+2020-11-16 20:43:09,128 [main] WARN  org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -  - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-16 20:43:09,261 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-16 20:43:09,281 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 20:43:09,321 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory -  - Setting initial instance status as: STARTING
+2020-11-16 20:43:09,351 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Initializing Eureka in region us-east-1
+2020-11-16 20:43:09,537 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using JSON encoding codec LegacyJacksonJson
+2020-11-16 20:43:09,537 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using JSON decoding codec LegacyJacksonJson
+2020-11-16 20:43:09,738 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using XML encoding codec XStreamXml
+2020-11-16 20:43:09,739 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using XML decoding codec XStreamXml
+2020-11-16 20:43:09,911 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-16 20:43:09,930 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Disable delta property : false
+2020-11-16 20:43:09,931 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Single vip registry refresh property : null
+2020-11-16 20:43:09,931 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Force full registry fetch : false
+2020-11-16 20:43:09,931 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Application is null : false
+2020-11-16 20:43:09,931 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Registered Applications size is zero : true
+2020-11-16 20:43:09,932 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Application version is -1: true
+2020-11-16 20:43:09,932 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Getting all instance registry info from the eureka server
+2020-11-16 20:43:10,104 [main] INFO  com.netflix.discovery.DiscoveryClient -  - The response status is 200
+2020-11-16 20:43:10,107 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Starting heartbeat executor: renew interval is: 30
+2020-11-16 20:43:10,109 [main] INFO  com.netflix.discovery.InstanceInfoReplicator -  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-16 20:43:10,113 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Discovery Client initialized at timestamp 1605559390113 with initial instances count: 0
+2020-11-16 20:43:10,116 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -  - Registering application RECOMMENDATION-SERVICE with eureka with status UP
+2020-11-16 20:43:10,117 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Saw local status change event StatusChangeEvent [timestamp=1605559390117, current=UP, previous=STARTING]
+2020-11-16 20:43:10,124 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080: registering service...
+2020-11-16 20:43:10,169 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration -  - Updating port to 8080
+2020-11-16 20:43:10,180 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-16 20:43:10,256 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - registration status: 204
+2020-11-16 20:43:10,397 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-16 20:43:10,414 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Started RecommendMainClass in 5.866 seconds (JVM running for 6.731)
+2020-11-16 20:43:40,107 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - Disable delta property : false
+2020-11-16 20:43:40,108 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - Single vip registry refresh property : null
+2020-11-16 20:43:40,108 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - Force full registry fetch : false
+2020-11-16 20:43:40,109 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - Application is null : false
+2020-11-16 20:43:40,109 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - Registered Applications size is zero : true
+2020-11-16 20:43:40,109 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - Application version is -1: false
+2020-11-16 20:43:40,109 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - Getting all instance registry info from the eureka server
+2020-11-16 20:43:40,159 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient -  - The response status is 200
+2020-11-16 20:48:09,934 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-16 20:53:09,935 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-16 20:58:09,936 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-16 21:03:09,937 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-16 21:06:03,620 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -  - Unregistering application RECOMMENDATION-SERVICE with eureka with status DOWN
+2020-11-16 21:06:03,621 [RMI TCP Connection(8)-127.0.0.1] ERROR com.netflix.discovery.DiscoveryClient -  - Saw local status change event StatusChangeEvent [timestamp=1605560763621, current=DOWN, previous=UP]
+2020-11-16 21:06:03,621 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080: registering service...
+2020-11-16 21:06:03,629 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - registration status: 204
+2020-11-16 21:06:03,638 [RMI TCP Connection(8)-127.0.0.1] INFO  org.apache.catalina.core.StandardService -  - Stopping service [Tomcat]
+2020-11-16 21:06:03,708 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-16 21:06:03,710 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-16 21:06:03,710 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-16 21:06:03,723 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-16 21:06:03,724 [RMI TCP Connection(8)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - Shutting down DiscoveryClient ...
+2020-11-16 21:06:06,726 [RMI TCP Connection(8)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - Unregistering ...
+2020-11-16 21:06:06,732 [RMI TCP Connection(8)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - deregister  status: 200
+2020-11-16 21:06:06,759 [RMI TCP Connection(8)-127.0.0.1] INFO  com.netflix.discovery.DiscoveryClient -  - Completed shut down of DiscoveryClient

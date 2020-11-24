@@ -1,0 +1,622 @@
+2020-11-15 17:28:40,818 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 5831 (/home/ubuntu/Music/team2-bookapp/RecommendModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/RecommendModule)
+2020-11-15 17:28:40,823 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 17:28:41,455 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:28:41,457 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-15 17:28:41,493 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 17:28:41,514 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
+2020-11-15 17:28:41,538 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:28:41,538 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 17:28:41,544 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 17:28:41,547 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 8ms. Found 1 MongoDB repository interfaces.
+2020-11-15 17:28:41,778 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 17:28:41,968 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 17:28:41,968 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 17:28:42,084 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 17:28:42,084 [main] INFO  org.springframework.web.context.ContextLoader -  - Root WebApplicationContext: initialization completed in 1174 ms
+2020-11-15 17:28:42,210 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-15 17:28:42,250 [main] INFO  org.hibernate.Version -  - HHH000412: Hibernate Core {5.4.9.Final}
+2020-11-15 17:28:42,324 [main] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-15 17:28:42,385 [main] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-15 17:28:42,517 [main] ERROR com.zaxxer.hikari.pool.HikariPool -  - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.stackroute.recommendationservice.RecommendMainClass.main(RecommendMainClass.java:12)
+2020-11-15 17:28:42,535 [main] WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator -  - HHH000342: Could not obtain connection to query metadata : Public Key Retrieval is not allowed
+2020-11-15 17:28:42,539 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-11-15 17:28:42,544 [main] INFO  org.apache.catalina.core.StandardService -  - Stopping service [Tomcat]
+2020-11-15 17:28:42,571 [main] ERROR org.springframework.boot.SpringApplication -  - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.stackroute.recommendationservice.RecommendMainClass.main(RecommendMainClass.java:12)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 33 common frames omitted
+2020-11-15 17:37:58,778 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 6384 (/home/ubuntu/Music/team2-bookapp/RecommendModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/RecommendModule)
+2020-11-15 17:37:58,782 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 17:37:59,502 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:37:59,504 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-15 17:37:59,539 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 17:37:59,558 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 48ms. Found 1 JPA repository interfaces.
+2020-11-15 17:37:59,583 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:37:59,584 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 17:37:59,590 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 17:37:59,593 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 9ms. Found 1 MongoDB repository interfaces.
+2020-11-15 17:37:59,837 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 17:38:00,041 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 17:38:00,042 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 17:38:00,155 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 17:38:00,155 [main] INFO  org.springframework.web.context.ContextLoader -  - Root WebApplicationContext: initialization completed in 1291 ms
+2020-11-15 17:38:00,202 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2020-11-15 17:38:00,206 [main] INFO  org.apache.catalina.core.StandardService -  - Stopping service [Tomcat]
+2020-11-15 17:38:00,228 [main] ERROR org.springframework.boot.SpringApplication -  - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.stackroute.recommendationservice.RecommendMainClass.main(RecommendMainClass.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 42 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:222)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:174)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 43 common frames omitted
+2020-11-15 17:44:49,474 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 6946 (/home/ubuntu/Music/team2-bookapp/RecommendModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/RecommendModule)
+2020-11-15 17:44:49,483 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 17:44:50,088 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:44:50,088 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-15 17:44:50,123 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 17:44:50,161 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 66ms. Found 1 JPA repository interfaces.
+2020-11-15 17:44:50,206 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:44:50,206 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 17:44:50,213 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 17:44:50,218 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 11ms. Found 1 MongoDB repository interfaces.
+2020-11-15 17:44:50,596 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 17:44:50,596 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-15 17:44:50,662 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 17:44:50,800 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 17:44:50,847 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-15 17:44:50,901 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-15 17:44:51,011 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-15 17:44:51,063 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-15 17:44:51,086 [cluster-ClusterId{value='5fb16912c544364c3c9728b7', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2020-11-15 17:44:51,095 [cluster-ClusterId{value='5fb16912c544364c3c9728b7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7674523}
+2020-11-15 17:44:51,181 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-15 17:44:51,504 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-15 17:44:51,769 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-15 17:44:52,428 [task-1] ERROR com.zaxxer.hikari.pool.HikariPool -  - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-15 17:44:52,429 [task-1] WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator -  - HHH000342: Could not obtain connection to query metadata : Public Key Retrieval is not allowed
+2020-11-15 17:44:52,433 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.stackroute.recommendationservice.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-11-15 17:44:52,441 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-15 17:44:52,442 [main] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter -  - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-11-15 17:44:52,443 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-15 17:44:52,449 [main] INFO  org.apache.catalina.core.StandardService -  - Stopping service [Tomcat]
+2020-11-15 17:44:52,517 [main] ERROR org.springframework.boot.SpringApplication -  - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.stackroute.recommendationservice.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.stackroute.recommendationservice.RecommendMainClass.main(RecommendMainClass.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 17 common frames omitted
+2020-11-15 17:54:24,096 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 7686 (/home/ubuntu/Music/team2-bookapp/RecommendModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/RecommendModule)
+2020-11-15 17:54:24,104 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 17:54:24,790 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:54:24,792 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-15 17:54:24,831 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 17:54:24,856 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 57ms. Found 1 JPA repository interfaces.
+2020-11-15 17:54:24,884 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:54:24,884 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 17:54:24,891 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 17:54:24,895 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 10ms. Found 1 MongoDB repository interfaces.
+2020-11-15 17:54:25,144 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 17:54:25,363 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 17:54:25,365 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 17:54:25,473 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 17:54:25,474 [main] INFO  org.springframework.web.context.ContextLoader -  - Root WebApplicationContext: initialization completed in 1288 ms
+2020-11-15 17:54:25,529 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2020-11-15 17:54:25,533 [main] INFO  org.apache.catalina.core.StandardService -  - Stopping service [Tomcat]
+2020-11-15 17:54:25,564 [main] ERROR org.springframework.boot.SpringApplication -  - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.stackroute.recommendationservice.RecommendMainClass.main(RecommendMainClass.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 42 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:222)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:174)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 43 common frames omitted
+2020-11-15 18:00:42,810 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 8316 (/home/ubuntu/Music/team2-bookapp/RecommendModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/RecommendModule)
+2020-11-15 18:00:42,815 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 18:00:43,497 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 18:00:43,499 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-15 18:00:43,535 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 18:00:43,557 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 52ms. Found 1 JPA repository interfaces.
+2020-11-15 18:00:43,583 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 18:00:43,584 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 18:00:43,591 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 18:00:43,594 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 9ms. Found 1 MongoDB repository interfaces.
+2020-11-15 18:00:43,831 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 18:00:44,038 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 18:00:44,039 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 18:00:44,146 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 18:00:44,147 [main] INFO  org.springframework.web.context.ContextLoader -  - Root WebApplicationContext: initialization completed in 1253 ms
+2020-11-15 18:00:44,280 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-15 18:00:44,320 [main] INFO  org.hibernate.Version -  - HHH000412: Hibernate Core {5.4.9.Final}
+2020-11-15 18:00:44,394 [main] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-15 18:00:44,469 [main] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-15 18:00:44,625 [main] ERROR com.zaxxer.hikari.pool.HikariPool -  - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:562)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.stackroute.recommendationservice.RecommendMainClass.main(RecommendMainClass.java:12)
+2020-11-15 18:00:44,630 [main] WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator -  - HHH000342: Could not obtain connection to query metadata : Public Key Retrieval is not allowed
+2020-11-15 18:00:44,633 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext -  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-11-15 18:00:44,637 [main] INFO  org.apache.catalina.core.StandardService -  - Stopping service [Tomcat]
+2020-11-15 18:00:44,664 [main] ERROR org.springframework.boot.SpringApplication -  - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.stackroute.recommendationservice.RecommendMainClass.main(RecommendMainClass.java:12)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1202)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1233)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 33 common frames omitted
+2020-11-15 18:02:20,684 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Starting RecommendMainClass on ip-172-31-39-185 with PID 8540 (/home/ubuntu/Music/team2-bookapp/RecommendModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/RecommendModule)
+2020-11-15 18:02:20,691 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 18:02:21,366 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 18:02:21,370 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-11-15 18:02:21,405 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 18:02:21,425 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 49ms. Found 1 JPA repository interfaces.
+2020-11-15 18:02:21,448 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 18:02:21,449 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 18:02:21,455 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 18:02:21,458 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 8ms. Found 1 MongoDB repository interfaces.
+2020-11-15 18:02:21,683 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 18:02:21,883 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 18:02:21,884 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 18:02:21,990 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 18:02:21,991 [main] INFO  org.springframework.web.context.ContextLoader -  - Root WebApplicationContext: initialization completed in 1182 ms
+2020-11-15 18:02:22,116 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-15 18:02:22,154 [main] INFO  org.hibernate.Version -  - HHH000412: Hibernate Core {5.4.9.Final}
+2020-11-15 18:02:22,236 [main] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-15 18:02:22,304 [main] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-15 18:02:22,514 [main] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-15 18:02:22,537 [main] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-15 18:02:22,980 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-15 18:02:22,986 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-15 18:02:23,194 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-15 18:02:23,194 [main] INFO  org.mongodb.driver.cluster -  - Adding discovered server localhost:27017 to client view of cluster
+2020-11-15 18:02:23,242 [cluster-ClusterId{value='5fb16d2f13e9dc555e508397', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2020-11-15 18:02:23,259 [cluster-ClusterId{value='5fb16d2f13e9dc555e508397', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 10]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2464297}
+2020-11-15 18:02:23,264 [cluster-ClusterId{value='5fb16d2f13e9dc555e508397', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Discovered cluster type of STANDALONE
+2020-11-15 18:02:23,669 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-15 18:02:23,788 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 18:02:24,013 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Started RecommendMainClass in 3.902 seconds (JVM running for 4.657)
+2020-11-15 18:02:51,393 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-15 18:02:51,399 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-15 18:02:51,414 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 13 ms
+2020-11-15 18:02:51,495 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:02:51,541 [http-nio-8080-exec-1] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:2, serverValue:18}] to localhost:27017
+2020-11-15 18:02:51,553 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - No recommendation was found
+2020-11-15 18:02:59,681 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the save recommendation block
+2020-11-15 18:02:59,769 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation by ID
+2020-11-15 18:02:59,789 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - The recommendation has been saved.
+2020-11-15 18:02:59,850 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:02:59,876 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:03:18,664 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the save recommendation block
+2020-11-15 18:03:18,667 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation by ID
+2020-11-15 18:03:18,672 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - The recommendation has been saved.
+2020-11-15 18:03:18,686 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:03:18,692 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:03:20,574 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the save recommendation block
+2020-11-15 18:03:20,578 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation by ID
+2020-11-15 18:03:20,580 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - The recommendation has been saved.
+2020-11-15 18:03:20,593 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:03:20,599 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:03:22,839 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the save recommendation block
+2020-11-15 18:03:22,850 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation by ID
+2020-11-15 18:03:22,855 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - The recommendation has been saved.
+2020-11-15 18:03:22,868 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:03:22,882 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:03:28,495 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the save recommendation block
+2020-11-15 18:03:28,501 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation by ID
+2020-11-15 18:03:28,506 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - The recommendation has been saved.
+2020-11-15 18:03:28,515 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:03:28,531 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:03:31,447 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the save recommendation block
+2020-11-15 18:03:31,451 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation by ID
+2020-11-15 18:03:31,454 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - The recommendation has been saved.
+2020-11-15 18:03:31,465 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:03:31,481 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:14:50,263 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:14:50,294 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:15:52,364 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-15 18:15:52,379 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-15 18:42:14,830 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-15 18:42:14,834 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection -  - Closed connection [connectionId{localValue:2, serverValue:18}] to localhost:27017 because the pool has been closed.
+2020-11-15 18:42:14,850 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-15 18:42:14,953 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-15 18:42:15,053 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.

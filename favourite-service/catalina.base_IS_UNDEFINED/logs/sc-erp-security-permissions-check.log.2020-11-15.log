@@ -1,0 +1,110 @@
+2020-11-15 16:55:49,544 [main] INFO  com.stackroute.favouriteservice.FavouritesMainClass -  - Starting FavouritesMainClass on ip-172-31-39-185 with PID 4034 (/home/ubuntu/Music/team2-bookapp/FavouritesModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/FavouritesModule)
+2020-11-15 16:55:49,550 [main] INFO  com.stackroute.favouriteservice.FavouritesMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 16:55:50,200 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 16:55:50,201 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-15 16:55:50,239 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.favouriteservice.repository.FavouritesRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 16:55:50,260 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
+2020-11-15 16:55:50,296 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 16:55:50,298 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 16:55:50,304 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.favouriteservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 16:55:50,308 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 9ms. Found 1 MongoDB repository interfaces.
+2020-11-15 16:55:50,717 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 16:55:50,719 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-15 16:55:50,815 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 16:55:50,962 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 16:55:51,010 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-15 16:55:51,054 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-15 16:55:51,109 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-15 16:55:51,172 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-15 16:55:51,184 [cluster-ClusterId{value='5fb15d97a705ce735b71f4b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:63)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-15 16:55:51,259 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-15 16:55:51,546 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-15 16:55:51,571 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-15 16:55:51,705 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-15 16:55:52,202 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-15 16:55:52,211 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-15 16:55:52,222 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-15 16:55:52,370 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-15 16:55:52,381 [main] INFO  com.stackroute.favouriteservice.FavouritesMainClass -  - Started FavouritesMainClass in 3.166 seconds (JVM running for 4.011)
+2020-11-15 16:57:31,215 [cluster-ClusterId{value='5fb15d97a705ce735b71f4b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:11, serverValue:1}] to localhost:27017
+2020-11-15 16:57:31,220 [cluster-ClusterId{value='5fb15d97a705ce735b71f4b5', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2778432}
+2020-11-15 17:04:00,555 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-15 17:04:00,560 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-15 17:04:00,565 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-15 17:04:00,588 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-15 17:04:14,166 [main] INFO  com.stackroute.favouriteservice.FavouritesMainClass -  - Starting FavouritesMainClass on ip-172-31-39-185 with PID 4882 (/home/ubuntu/Music/team2-bookapp/FavouritesModule/target/classes started by ubuntu in /home/ubuntu/Music/team2-bookapp/FavouritesModule)
+2020-11-15 17:04:14,170 [main] INFO  com.stackroute.favouriteservice.FavouritesMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-15 17:04:14,870 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:04:14,871 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-15 17:04:14,906 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.favouriteservice.repository.FavouritesRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-15 17:04:14,925 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 47ms. Found 1 JPA repository interfaces.
+2020-11-15 17:04:14,961 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-15 17:04:14,961 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-15 17:04:14,975 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.favouriteservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-15 17:04:14,980 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 18ms. Found 1 MongoDB repository interfaces.
+2020-11-15 17:04:15,374 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-15 17:04:15,376 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-15 17:04:15,478 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-15 17:04:15,623 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 17:04:15,681 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-15 17:04:15,749 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-15 17:04:15,778 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-15 17:04:15,875 [cluster-ClusterId{value='5fb15f8f82e4590aed53210c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2020-11-15 17:04:15,896 [cluster-ClusterId{value='5fb15f8f82e4590aed53210c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6858181}
+2020-11-15 17:04:15,935 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-15 17:04:16,120 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-15 17:04:16,295 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-15 17:04:16,375 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-15 17:04:16,393 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-15 17:04:16,833 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-15 17:04:16,913 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-15 17:04:16,919 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-15 17:04:17,049 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-15 17:04:17,062 [main] INFO  com.stackroute.favouriteservice.FavouritesMainClass -  - Started FavouritesMainClass in 3.226 seconds (JVM running for 4.04)
+2020-11-15 17:05:44,087 [http-nio-8083-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-15 17:05:44,089 [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-15 17:05:44,100 [http-nio-8083-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 8 ms
+2020-11-15 17:05:44,194 [http-nio-8083-exec-1] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 17:05:44,261 [http-nio-8083-exec-1] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2020-11-15 17:05:44,305 [http-nio-8083-exec-1] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 17:06:23,343 [http-nio-8083-exec-4] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the addTofavourites method
+2020-11-15 17:06:23,471 [http-nio-8083-exec-4] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourite has been added
+2020-11-15 17:06:31,992 [http-nio-8083-exec-5] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 17:06:32,070 [http-nio-8083-exec-5] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 17:07:03,173 [http-nio-8083-exec-6] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 17:07:03,180 [http-nio-8083-exec-6] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 17:07:10,738 [http-nio-8083-exec-7] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the addTofavourites method
+2020-11-15 17:07:10,746 [http-nio-8083-exec-7] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourite has been added
+2020-11-15 17:07:19,043 [http-nio-8083-exec-8] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 17:07:19,046 [http-nio-8083-exec-8] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 18:02:51,289 [http-nio-8083-exec-10] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 18:02:51,297 [http-nio-8083-exec-10] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 18:14:34,411 [http-nio-8083-exec-3] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 18:14:34,417 [http-nio-8083-exec-3] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 18:14:50,262 [http-nio-8083-exec-4] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 18:14:50,269 [http-nio-8083-exec-4] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 18:15:36,620 [http-nio-8083-exec-5] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 18:15:36,624 [http-nio-8083-exec-5] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 18:15:52,347 [http-nio-8083-exec-6] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - Inside the getUserFavs method
+2020-11-15 18:15:52,355 [http-nio-8083-exec-6] INFO  com.stackroute.favouriteservice.controller.FavouritesController -  - The favourites have been fetched by email
+2020-11-15 18:42:15,063 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection -  - Closed connection [connectionId{localValue:2, serverValue:14}] to localhost:27017 because the pool has been closed.
+2020-11-15 18:42:15,069 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-15 18:42:15,073 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-15 18:42:15,077 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-15 18:42:15,094 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.

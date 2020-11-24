@@ -1,0 +1,25 @@
+2020-11-19 19:22:13,861 [main] INFO  com.stackroute.userservice.UserMainClass -  - Starting UserMainClass on ip-172-31-32-40 with PID 12102 (/home/ubuntu/Desktop/team2-bookapp/user-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/user-service)
+2020-11-19 19:22:13,867 [main] DEBUG com.stackroute.userservice.UserMainClass -  - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-19 19:22:13,867 [main] INFO  com.stackroute.userservice.UserMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-19 19:22:14,537 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-19 19:22:14,602 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+2020-11-19 19:22:15,052 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-19 19:22:15,053 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-19 19:22:15,123 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-19 19:22:15,287 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 19:22:15,332 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-19 19:22:15,380 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-19 19:22:15,417 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-19 19:22:15,634 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-19 19:22:15,803 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-19 19:22:16,043 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-19 19:22:16,061 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-19 19:22:16,175 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-19 19:22:16,595 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-19 19:22:16,601 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-19 19:22:16,797 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-19 19:22:16,811 [main] INFO  com.stackroute.userservice.UserMainClass -  - Started UserMainClass in 3.267 seconds (JVM running for 4.096)
+2020-11-19 20:06:09,268 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-19 20:06:09,350 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-19 20:06:09,351 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-19 20:06:09,472 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.

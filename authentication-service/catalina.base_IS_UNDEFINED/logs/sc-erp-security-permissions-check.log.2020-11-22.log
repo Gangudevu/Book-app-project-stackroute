@@ -1,0 +1,102 @@
+2020-11-22 11:48:25,297 [main] INFO  com.stackroute.authenticationservice.LoginMainClass -  - Starting LoginMainClass on ip-172-31-32-40 with PID 5373 (/home/ubuntu/Desktop/team2-bookapp/authentication-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/authentication-service)
+2020-11-22 11:48:25,304 [main] INFO  com.stackroute.authenticationservice.LoginMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-22 11:48:26,231 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 11:48:26,282 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 43ms. Found 1 JPA repository interfaces.
+2020-11-22 11:48:26,705 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-22 11:48:26,706 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-22 11:48:26,774 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-22 11:48:26,971 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 11:48:27,018 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 11:48:27,049 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 11:48:27,078 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-22 11:48:27,251 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 11:48:27,349 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-22 11:48:27,635 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-22 11:48:27,653 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-22 11:48:27,719 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-22 11:48:28,222 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 11:48:28,228 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 11:48:28,439 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-22 11:48:28,450 [main] INFO  com.stackroute.authenticationservice.LoginMainClass -  - Started LoginMainClass in 3.452 seconds (JVM running for 4.264)
+2020-11-22 11:53:26,358 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 11:53:26,359 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-22 11:53:26,369 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 9 ms
+2020-11-22 11:53:26,520 [http-nio-8082-exec-2] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 11:53:26,522 [http-nio-8082-exec-1] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 11:53:26,893 [http-nio-8082-exec-1] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 11:53:26,899 [http-nio-8082-exec-2] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 12:35:18,074 [http-nio-8082-exec-3] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 12:35:18,081 [http-nio-8082-exec-6] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 12:35:18,285 [http-nio-8082-exec-3] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 12:35:18,292 [http-nio-8082-exec-6] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 12:44:01,706 [http-nio-8082-exec-8] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 12:44:01,723 [http-nio-8082-exec-10] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 12:44:01,895 [http-nio-8082-exec-8] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 12:44:01,977 [http-nio-8082-exec-10] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 12:52:03,700 [http-nio-8082-exec-4] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 12:52:03,717 [http-nio-8082-exec-5] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 12:52:03,893 [http-nio-8082-exec-4] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 12:52:03,948 [http-nio-8082-exec-5] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 13:02:51,099 [http-nio-8082-exec-9] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 13:02:51,107 [http-nio-8082-exec-8] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 13:02:51,291 [http-nio-8082-exec-8] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 13:02:51,369 [http-nio-8082-exec-9] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 13:09:16,804 [http-nio-8082-exec-2] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 13:09:16,812 [http-nio-8082-exec-4] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 13:09:16,984 [http-nio-8082-exec-2] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 13:09:17,088 [http-nio-8082-exec-4] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 13:19:17,605 [http-nio-8082-exec-3] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 13:19:17,619 [http-nio-8082-exec-7] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 13:19:17,780 [http-nio-8082-exec-3] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 13:19:17,892 [http-nio-8082-exec-7] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 14:00:08,771 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:00:08,858 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:00:08,859 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-22 14:00:08,866 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-22 17:29:16,604 [main] INFO  com.stackroute.authenticationservice.LoginMainClass -  - Starting LoginMainClass on ip-172-31-32-40 with PID 6127 (/home/ubuntu/Desktop/team2-bookapp/authentication-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/authentication-service)
+2020-11-22 17:29:16,610 [main] INFO  com.stackroute.authenticationservice.LoginMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-22 17:29:17,330 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 17:29:17,383 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+2020-11-22 17:29:18,000 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-22 17:29:18,002 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-22 17:29:18,122 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-22 17:29:18,402 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 17:29:18,449 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 17:29:18,502 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-22 17:29:18,509 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 17:29:18,647 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 17:29:18,807 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-22 17:29:19,110 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-22 17:29:19,121 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-22 17:29:19,132 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-22 17:29:19,580 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 17:29:19,593 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 17:29:19,833 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-22 17:29:19,845 [main] INFO  com.stackroute.authenticationservice.LoginMainClass -  - Started LoginMainClass in 3.548 seconds (JVM running for 4.555)
+2020-11-22 17:31:17,569 [http-nio-8082-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 17:31:17,571 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-22 17:31:17,578 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 7 ms
+2020-11-22 17:31:17,680 [http-nio-8082-exec-2] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 17:31:17,680 [http-nio-8082-exec-1] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 17:31:18,262 [http-nio-8082-exec-1] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 17:31:18,266 [http-nio-8082-exec-2] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 17:50:39,904 [http-nio-8082-exec-5] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 17:50:39,908 [http-nio-8082-exec-6] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 17:50:40,122 [http-nio-8082-exec-6] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 17:50:40,186 [http-nio-8082-exec-5] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 17:58:21,090 [http-nio-8082-exec-9] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 17:58:21,099 [http-nio-8082-exec-10] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 17:58:21,263 [http-nio-8082-exec-10] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 17:58:21,386 [http-nio-8082-exec-9] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 18:36:44,263 [http-nio-8082-exec-4] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 18:36:44,266 [http-nio-8082-exec-6] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 18:36:44,436 [http-nio-8082-exec-4] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 18:36:44,468 [http-nio-8082-exec-6] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 18:45:09,975 [http-nio-8082-exec-7] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 18:45:09,997 [http-nio-8082-exec-10] INFO  com.stackroute.authenticationservice.controller.LoginController -  - Inside the logIn user block
+2020-11-22 18:45:10,162 [http-nio-8082-exec-10] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 18:45:10,277 [http-nio-8082-exec-7] INFO  com.stackroute.authenticationservice.controller.LoginController -  - The user has been logged in
+2020-11-22 19:35:08,944 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 19:35:08,956 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 19:35:08,956 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-22 19:35:08,971 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.

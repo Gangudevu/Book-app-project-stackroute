@@ -1,0 +1,12 @@
+06 November 
+ INFO  c.s.userservice.UserMainClass -
+				Starting UserMainClass on ip-172-31-39-185 with PID 15876 (/home/ubuntu/Downloads/team2-bookapp/UserModule/target/classes started by ubuntu in /home/ubuntu/Downloads/team2-bookapp/UserModule)
+06 November 
+ DEBUG c.s.userservice.UserMainClass -
+				Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+06 November 
+ INFO  c.s.userservice.UserMainClass -
+				No active profile set, falling back to default profiles: default
+06 November 
+ INFO  c.s.userservice.UserMainClass -
+				Started UserMainClass in 3.101 seconds (JVM running for 3.864)

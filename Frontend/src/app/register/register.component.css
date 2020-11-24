@@ -1,0 +1,59 @@
+#cover {
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.adjust,h1{
+    text-align: center;
+    padding-left: 6.5em;
+    padding-bottom: .5em;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: #d7d9db;
+    
+}
+.adjust{
+    height: 50%;
+    width: 50%;
+}
+
+img {
+    display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.googleFont {
+    font-family: 'Roboto Slab', sans-serif;
+    
+    /* background-image: url("../../assets/book-stash-home.jpeg"); */
+    /* background-color: red; */
+  }
+
+  /* .container[_ngcontent-fvb-c2] {
+    
+} */
+
+/* .container[_ngcontent-hjh-c2] {
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+} */

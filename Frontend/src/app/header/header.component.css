@@ -1,0 +1,121 @@
+.btn-primary {
+   margin: 5px;
+}
+.btn-outline-primary1{
+    position: absolute;
+    right: 1em;
+}
+
+
+/* .sticky{
+    position: fixed;
+} */
+/* .btn-outline-primary{
+    position: absolute;
+    left: 8em;
+    margin-top: -1.1em;
+} */
+
+/* @media (min-width: 992px) */
+/* .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: 6em;
+    margin-top: 1em;
+} */
+
+.jumbotron div.container div.container-fluid {
+   box-shadow: 1px solid ;
+}
+
+/* .sticky{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    float: left;
+    opacity: 0.8;
+    
+} */
+
+.btn-danger{
+   width: 100%;
+   color: black;
+   border-color: #ffffff;
+   background-color: #ffffff;
+
+}
+
+.cursive{
+   font-family: 'Satisfy', cursive;
+   font-size: 1.3em;
+}
+
+.googleFont {
+   font-family: 'Roboto Slab', sans-serif;
+}
+
+.bg-light {
+    background-color: grey!important;
+    
+}
+
+/* .btn {
+    display: inline-block;
+    font-weight: 400;
+    color:black;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+.btn{
+
+    color: black;
+    background-color: white;
+}
+
+/* .sticky{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.sticky + .content{
+    padding-top: 102px;
+} */
+
+/* .fixed-header{
+    position: fixed;
+    z-index: 999;
+} */
+
+a {
+    color: black;
+    font-size: 1.5em;
+    font-family: unset;
+    text-decoration: none;
+    /* background-color: transparent; */
+}
+
+img {
+    vertical-align: middle;
+    border-style: none; 
+    border-radius: 50%;
+    
+} 
+
+/* .dropdown-menu {
+    position: absolute;
+    left: -3em;  
+} */

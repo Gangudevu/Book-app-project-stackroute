@@ -1,0 +1,49 @@
+footer
+{
+    background-color:grey;
+    padding: 10px;
+    color:white;
+    clear: both;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.googlefont 
+{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+body 
+{
+    margin: 0px;
+}
+
+.forFavicon 
+{
+    float: left;
+    color: white;
+}
+
+.fa-instagram:before 
+{
+    content: "\f16d";
+    color: black;
+    font-size: 1.5em;
+    padding-left: .2em;
+}
+.fa-linkedin-square:before 
+{
+    content: "\f08c";
+    color: black;
+    font-size: 1.5em;
+}
+.fa-twitter:before 
+{
+    content: "\f099";
+    color: black;
+    font-size: 1.5em;
+}

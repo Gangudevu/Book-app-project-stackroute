@@ -1,0 +1,393 @@
+2020-11-17 04:19:22,607 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-17 04:19:23,176 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-17 04:19:23,177 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-17 04:19:23,207 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.RecommendRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-11-17 04:19:23,239 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 56ms. Found 1 JPA repository interfaces.
+2020-11-17 04:19:23,259 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-17 04:19:23,259 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-17 04:19:23,265 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport -  - Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.stackroute.recommendationservice.repository.UserRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2020-11-17 04:19:23,268 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 8ms. Found 1 MongoDB repository interfaces.
+2020-11-17 04:19:23,471 [main] INFO  org.springframework.cloud.context.scope.GenericScope -  - BeanFactory id=72f85714-1753-3d2c-aee4-0a6e4324fcae
+2020-11-17 04:19:23,749 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-17 04:19:23,750 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-17 04:19:23,890 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-17 04:19:23,997 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 04:19:24,038 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-17 04:19:24,091 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-17 04:19:24,123 [main] INFO  org.mongodb.driver.cluster -  - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-11-17 04:19:24,267 [cluster-ClusterId{value='5fb34f4c34daaf4eeaa089f9', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+2020-11-17 04:19:24,274 [cluster-ClusterId{value='5fb34f4c34daaf4eeaa089f9', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -  - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4762295}
+2020-11-17 04:19:24,289 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-17 04:19:24,329 [main] WARN  org.springframework.data.convert.CustomConversions -  - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-17 04:19:24,394 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-17 04:19:24,495 [main] WARN  org.springframework.data.convert.CustomConversions -  - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-17 04:19:24,617 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-17 04:19:24,634 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-17 04:19:24,683 [main] WARN  com.netflix.config.sources.URLConfigurationSource -  - No URLs will be polled as dynamic configuration sources.
+2020-11-17 04:19:24,684 [main] INFO  com.netflix.config.sources.URLConfigurationSource -  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 04:19:24,695 [main] WARN  com.netflix.config.sources.URLConfigurationSource -  - No URLs will be polled as dynamic configuration sources.
+2020-11-17 04:19:24,697 [main] INFO  com.netflix.config.sources.URLConfigurationSource -  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 04:19:24,804 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-17 04:19:25,319 [main] INFO  org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration -  - Eureka HTTP Client uses Jersey
+2020-11-17 04:19:25,363 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-17 04:19:25,376 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-17 04:19:25,389 [main] WARN  org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -  - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-17 04:19:25,558 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory -  - Setting initial instance status as: STARTING
+2020-11-17 04:19:25,582 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Initializing Eureka in region us-east-1
+2020-11-17 04:19:25,732 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using JSON encoding codec LegacyJacksonJson
+2020-11-17 04:19:25,732 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using JSON decoding codec LegacyJacksonJson
+2020-11-17 04:19:25,826 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using XML encoding codec XStreamXml
+2020-11-17 04:19:25,826 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider -  - Using XML decoding codec XStreamXml
+2020-11-17 04:19:25,971 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:19:25,986 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Disable delta property : false
+2020-11-17 04:19:25,986 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Single vip registry refresh property : null
+2020-11-17 04:19:25,986 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Force full registry fetch : false
+2020-11-17 04:19:25,987 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Application is null : false
+2020-11-17 04:19:25,987 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Registered Applications size is zero : true
+2020-11-17 04:19:25,987 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Application version is -1: true
+2020-11-17 04:19:25,987 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Getting all instance registry info from the eureka server
+2020-11-17 04:19:26,100 [main] INFO  com.netflix.discovery.DiscoveryClient -  - The response status is 200
+2020-11-17 04:19:26,103 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Starting heartbeat executor: renew interval is: 30
+2020-11-17 04:19:26,106 [main] INFO  com.netflix.discovery.InstanceInfoReplicator -  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-17 04:19:26,109 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Discovery Client initialized at timestamp 1605586766108 with initial instances count: 2
+2020-11-17 04:19:26,112 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -  - Registering application RECOMMENDATION-SERVICE with eureka with status UP
+2020-11-17 04:19:26,113 [main] INFO  com.netflix.discovery.DiscoveryClient -  - Saw local status change event StatusChangeEvent [timestamp=1605586766113, current=UP, previous=STARTING]
+2020-11-17 04:19:26,119 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080: registering service...
+2020-11-17 04:19:26,148 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration -  - Updating port to 8080
+2020-11-17 04:19:26,151 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-17 04:19:26,176 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - registration status: 204
+2020-11-17 04:19:26,318 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-17 04:19:26,329 [main] INFO  com.stackroute.recommendationservice.RecommendMainClass -  - Started RecommendMainClass in 4.591 seconds (JVM running for 5.342)
+2020-11-17 04:20:56,567 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 04:20:56,578 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-17 04:20:56,596 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 17 ms
+2020-11-17 04:20:56,700 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:20:56,764 [http-nio-8080-exec-1] INFO  org.mongodb.driver.connection -  - Opened connection [connectionId{localValue:2, serverValue:16}] to localhost:27017
+2020-11-17 04:20:56,945 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:24:25,989 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:24:39,607 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:24:39,638 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:27:03,143 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:27:03,184 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:29:21,251 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:29:21,321 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:29:25,990 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:31:34,314 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:31:34,331 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:31:58,448 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:31:58,518 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:32:34,952 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:32:34,986 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:33:17,379 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:33:17,443 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:34:25,991 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:34:38,677 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:34:38,704 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:39:25,992 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:43:33,883 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:43:33,926 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:44:25,993 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:45:55,253 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:45:55,283 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:46:47,800 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:46:47,831 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:47:57,046 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:47:57,065 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:48:40,669 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:48:40,691 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:49:25,993 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:49:37,234 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:49:37,258 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:50:12,521 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:50:12,591 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:50:43,728 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 04:50:43,764 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 04:54:25,994 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 04:59:25,995 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:04:25,995 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:09:25,996 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:14:25,997 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:19:25,998 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:24:25,999 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:29:10,654 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 05:29:10,672 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 05:29:26,000 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:31:41,406 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 05:31:41,428 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 05:32:14,206 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 05:32:14,284 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 05:34:26,002 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:39:26,002 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:40:36,711 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 05:40:36,721 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 05:41:54,093 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 05:41:54,111 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 05:43:51,218 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 05:43:51,246 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 05:44:26,003 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:49:26,003 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:54:26,006 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 05:59:26,006 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:04:26,007 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:09:26,007 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:14:26,008 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:19:26,008 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:24:26,009 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:29:26,010 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:34:26,010 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:34:44,628 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:34:44,638 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:36:04,148 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:36:04,164 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:36:20,580 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:36:20,603 [http-nio-8080-exec-2] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:37:39,737 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:37:39,753 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:38:04,099 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:38:04,116 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:38:11,408 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:38:11,418 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:39:26,011 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:43:16,932 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:43:16,948 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:44:26,011 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:45:21,222 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:45:21,240 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:45:36,684 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:45:36,702 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:49:26,012 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:54:26,013 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 06:57:07,716 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:57:07,729 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:57:56,538 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 06:57:56,547 [http-nio-8080-exec-5] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 06:59:26,014 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:04:26,014 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:09:26,015 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:11:49,816 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 07:11:49,826 [http-nio-8080-exec-8] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 07:14:05,540 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 07:14:05,573 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 07:14:26,016 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:14:44,788 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 07:14:44,816 [http-nio-8080-exec-1] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 07:15:34,160 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 07:15:34,174 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 07:19:26,016 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:24:26,017 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:29:26,017 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:34:26,018 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:39:26,019 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:44:26,019 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:49:26,020 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:54:26,020 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 07:59:26,021 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:04:26,021 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:09:26,022 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:14:26,023 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:19:26,023 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:24:26,024 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:29:26,025 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:34:26,025 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:39:26,026 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:42:52,481 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 08:42:52,491 [http-nio-8080-exec-4] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 08:44:26,026 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:49:26,027 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:54:26,027 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 08:59:26,028 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:04:26,028 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:09:26,029 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:14:26,029 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:16:41,394 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 09:16:41,404 [http-nio-8080-exec-6] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 09:17:23,277 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 09:17:23,286 [http-nio-8080-exec-7] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 09:18:04,276 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 09:18:04,289 [http-nio-8080-exec-10] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 09:18:41,000 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 09:18:41,015 [http-nio-8080-exec-9] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 09:19:26,030 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:20:22,741 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Inside the getRecommendation count method
+2020-11-17 09:20:22,759 [http-nio-8080-exec-3] INFO  com.stackroute.recommendationservice.controller.RecommendController -  - Fetching recommendation count
+2020-11-17 09:24:26,030 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:29:26,031 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:34:26,032 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:39:26,032 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:44:26,033 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:49:26,033 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:54:26,034 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 09:59:26,035 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 10:04:26,036 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 10:09:26,036 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver -  - Resolving eureka endpoints via configuration
+2020-11-17 10:13:09,844 [SpringContextShutdownHook] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry -  - Unregistering application RECOMMENDATION-SERVICE with eureka with status DOWN
+2020-11-17 10:13:09,844 [SpringContextShutdownHook] ERROR com.netflix.discovery.DiscoveryClient -  - Saw local status change event StatusChangeEvent [timestamp=1605607989844, current=DOWN, previous=UP]
+2020-11-17 10:13:09,848 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080: registering service...
+2020-11-17 10:13:09,866 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - registration status: 204
+2020-11-17 10:13:10,289 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection -  - Closed connection [connectionId{localValue:2, serverValue:16}] to localhost:27017 because the pool has been closed.
+2020-11-17 10:13:10,330 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-17 10:13:10,338 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-17 10:13:10,345 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-17 10:13:10,391 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-17 10:13:10,392 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -  - Shutting down DiscoveryClient ...
+2020-11-17 10:13:13,393 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -  - Unregistering ...
+2020-11-17 10:13:13,410 [SpringContextShutdownHook] INFO  com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient -  - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8007/eureka/} exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 42 more
+
+2020-11-17 10:13:13,411 [SpringContextShutdownHook] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient -  - Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2020-11-17 10:13:13,412 [SpringContextShutdownHook] INFO  com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient -  - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8007/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 43 more
+
+2020-11-17 10:13:13,414 [SpringContextShutdownHook] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient -  - Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2020-11-17 10:13:13,419 [SpringContextShutdownHook] ERROR com.netflix.discovery.DiscoveryClient -  - DiscoveryClient_RECOMMENDATION-SERVICE/ip-172-31-39-185.ap-south-1.compute.internal:recommendation-service:8080 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+2020-11-17 10:13:13,449 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -  - Completed shut down of DiscoveryClient

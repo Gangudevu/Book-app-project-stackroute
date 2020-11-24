@@ -1,0 +1,121 @@
+2020-11-22 11:46:45,694 [main] INFO  com.stackroute.userservice.UserMainClass -  - Starting UserMainClass on ip-172-31-32-40 with PID 4930 (/home/ubuntu/Desktop/team2-bookapp/user-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/user-service)
+2020-11-22 11:46:45,702 [main] DEBUG com.stackroute.userservice.UserMainClass -  - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-22 11:46:45,704 [main] INFO  com.stackroute.userservice.UserMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-22 11:46:47,474 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 11:46:47,848 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 222ms. Found 1 JPA repository interfaces.
+2020-11-22 11:46:48,542 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-22 11:46:48,544 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-22 11:46:48,609 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-22 11:46:48,831 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 11:46:48,902 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 11:46:48,984 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 11:46:49,229 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-22 11:46:50,137 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 11:46:50,722 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-22 11:46:50,733 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-22 11:46:51,424 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-22 11:46:51,494 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-22 11:46:52,763 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 11:46:52,771 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 11:46:53,272 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-22 11:46:53,294 [main] INFO  com.stackroute.userservice.UserMainClass -  - Started UserMainClass in 8.616 seconds (JVM running for 10.719)
+2020-11-22 11:47:50,659 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 11:47:50,661 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 11:47:50,662 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-22 11:47:50,678 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-22 11:48:13,939 [main] INFO  com.stackroute.userservice.UserMainClass -  - Starting UserMainClass on ip-172-31-32-40 with PID 5301 (/home/ubuntu/Desktop/team2-bookapp/user-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/user-service)
+2020-11-22 11:48:13,943 [main] DEBUG com.stackroute.userservice.UserMainClass -  - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-22 11:48:13,947 [main] INFO  com.stackroute.userservice.UserMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-22 11:48:14,579 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 11:48:14,627 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 40ms. Found 1 JPA repository interfaces.
+2020-11-22 11:48:15,048 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-22 11:48:15,048 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-22 11:48:15,142 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-22 11:48:15,289 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 11:48:15,335 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 11:48:15,378 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 11:48:15,396 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-22 11:48:15,535 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 11:48:15,660 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-22 11:48:15,941 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-22 11:48:15,966 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-22 11:48:16,153 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-22 11:48:16,514 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 11:48:16,522 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 11:48:16,709 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-22 11:48:16,719 [main] INFO  com.stackroute.userservice.UserMainClass -  - Started UserMainClass in 3.105 seconds (JVM running for 3.98)
+2020-11-22 12:40:42,308 [http-nio-8086-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 12:40:42,308 [http-nio-8086-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-22 12:40:42,316 [http-nio-8086-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 8 ms
+2020-11-22 12:40:42,365 [http-nio-8086-exec-3] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 12:40:42,445 [http-nio-8086-exec-3] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 12:40:52,057 [http-nio-8086-exec-4] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 12:40:52,061 [http-nio-8086-exec-4] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 12:44:53,761 [http-nio-8086-exec-6] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 12:44:53,766 [http-nio-8086-exec-6] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 12:54:13,812 [http-nio-8086-exec-9] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 12:54:13,819 [http-nio-8086-exec-9] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 12:54:55,626 [http-nio-8086-exec-10] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 12:54:55,630 [http-nio-8086-exec-10] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 12:54:59,434 [http-nio-8086-exec-1] INFO  com.stackroute.userservice.controller.UserController -  - Inside the delete user try block
+2020-11-22 12:54:59,485 [http-nio-8086-exec-1] INFO  com.stackroute.userservice.controller.UserController -  - user has been removed
+2020-11-22 13:02:30,376 [http-nio-8086-exec-3] INFO  com.stackroute.userservice.controller.UserController -  - Inside the register user try block
+2020-11-22 13:02:30,633 [http-nio-8086-exec-3] INFO  com.stackroute.userservice.controller.UserController -  - User has been registered.
+2020-11-22 13:04:41,737 [http-nio-8086-exec-3] ERROR com.stackroute.userservice.controller.UserController -  - Couldn't connect to host, port: smtp.gmail.com, 587; timeout -1
+2020-11-22 13:04:41,738 [http-nio-8086-exec-3] INFO  com.stackroute.userservice.controller.UserController -  - Email has been sent to registered user.
+2020-11-22 13:20:09,410 [http-nio-8086-exec-5] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 13:20:09,419 [http-nio-8086-exec-5] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 13:20:54,143 [http-nio-8086-exec-6] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 13:20:54,147 [http-nio-8086-exec-6] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 13:21:18,417 [http-nio-8086-exec-8] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 13:21:18,423 [http-nio-8086-exec-8] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 13:21:29,683 [http-nio-8086-exec-9] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 13:21:29,703 [http-nio-8086-exec-9] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 14:00:08,777 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 14:00:08,786 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 14:00:08,792 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-22 14:00:08,811 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
+2020-11-22 17:28:59,650 [main] INFO  com.stackroute.userservice.UserMainClass -  - Starting UserMainClass on ip-172-31-32-40 with PID 6045 (/home/ubuntu/Desktop/team2-bookapp/user-service/target/classes started by ubuntu in /home/ubuntu/Desktop/team2-bookapp/user-service)
+2020-11-22 17:28:59,653 [main] DEBUG com.stackroute.userservice.UserMainClass -  - Running with Spring Boot v2.3.5.RELEASE, Spring v5.2.10.RELEASE
+2020-11-22 17:28:59,653 [main] INFO  com.stackroute.userservice.UserMainClass -  - No active profile set, falling back to default profiles: default
+2020-11-22 17:29:01,307 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-22 17:29:01,400 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate -  - Finished Spring Data repository scanning in 70ms. Found 1 JPA repository interfaces.
+2020-11-22 17:29:02,079 [main] INFO  org.apache.catalina.core.StandardService -  - Starting service [Tomcat]
+2020-11-22 17:29:02,081 [main] INFO  org.apache.catalina.core.StandardEngine -  - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-22 17:29:02,156 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring embedded WebApplicationContext
+2020-11-22 17:29:02,411 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-22 17:29:02,479 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper -  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-22 17:29:02,570 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration -  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-22 17:29:03,087 [task-1] INFO  org.hibernate.Version -  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-22 17:29:04,792 [task-1] INFO  org.hibernate.annotations.common.Version -  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-22 17:29:05,440 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Triggering deferred initialization of Spring Data repositories…
+2020-11-22 17:29:05,672 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Starting...
+2020-11-22 17:29:06,094 [task-1] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Start completed.
+2020-11-22 17:29:06,174 [task-1] INFO  org.hibernate.dialect.Dialect -  - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-22 17:29:07,643 [task-1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-22 17:29:07,652 [task-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 17:29:08,100 [main] INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener -  - Spring Data repositories initialized!
+2020-11-22 17:29:08,114 [main] INFO  com.stackroute.userservice.UserMainClass -  - Started UserMainClass in 9.203 seconds (JVM running for 10.783)
+2020-11-22 18:04:40,573 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-22 18:04:40,574 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Initializing Servlet 'dispatcherServlet'
+2020-11-22 18:04:40,595 [http-nio-8086-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -  - Completed initialization in 21 ms
+2020-11-22 18:04:40,693 [http-nio-8086-exec-1] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:04:40,996 [http-nio-8086-exec-1] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 18:06:41,118 [http-nio-8086-exec-2] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:06:41,124 [http-nio-8086-exec-2] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 18:06:50,276 [http-nio-8086-exec-4] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:06:50,280 [http-nio-8086-exec-4] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 18:30:26,099 [http-nio-8086-exec-5] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:30:26,112 [http-nio-8086-exec-5] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 18:39:45,479 [http-nio-8086-exec-10] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:39:45,483 [http-nio-8086-exec-10] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 18:40:00,551 [http-nio-8086-exec-8] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:40:00,560 [http-nio-8086-exec-8] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 18:46:40,994 [http-nio-8086-exec-3] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:46:40,999 [http-nio-8086-exec-3] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 18:46:55,422 [http-nio-8086-exec-2] INFO  com.stackroute.userservice.controller.UserController -  - Inside the getUser method
+2020-11-22 18:46:55,430 [http-nio-8086-exec-2] INFO  com.stackroute.userservice.controller.UserController -  - The user is found
+2020-11-22 19:35:08,938 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-22 19:35:08,945 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor -  - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-22 19:35:08,946 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown initiated...
+2020-11-22 19:35:09,021 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -  - HikariPool-1 - Shutdown completed.
